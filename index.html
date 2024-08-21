@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html" class="logo__link">
+                    <img src="/assets/logo.png" alt="logo" width="100px">
+                    <h1>ODIN</h1>
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__header ">
+                <p class="main__header-text">This is not a real online service! You know you need something like this in
+                    your life to help you realize your deepest dreams.
+                    Sign up now to get started.</p>
+                <p>You know you want to.
+                </p>
+            </div>
+            <div class="main__body">
+
+                <form action="https://httpbin.org/post" method="post" class="body__form">
+
+                    <div class="form__wrapper">
+                        <h2 class="main__body__header">Let's do this !</h2>
+                        <div class="form-field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="First Name" id="firstName" pattern="[a-zA-Z0-9]+">
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="Last Name" id="lastName" pattern="[a-zA-Z0-9]+">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="phoneNumber">Phone number</label>
+                            <input type="tel" name="Phone number" id="phoneNumber" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
+                            ">
+                        </div>
+                        <div class="form-field">
+                            <label for="password">Password</label>
+                            <input type="password" name="Password" id="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <span class="form-field__error ">Passwords do not match</span>
+                        </div>
+                        <div class="form-field">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password" name="Password2" id="passwordConfirm"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+                    </div>
+
+                    <div class="form__button__wrapper">
+
+                        <button class="form__submit" type="submit">Create account</button>
+                        <p>Already have and account ? <a class='login_link' href="">Log in</a></p>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
