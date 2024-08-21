@@ -44,7 +44,7 @@ a {
 .header {
   max-width: 400px;
   height: 100%;
-  background-image: url(/assets/background.jpg);
+  background-image: url(assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
