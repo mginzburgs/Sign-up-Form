@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(fonts/Norse-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  background-color: burlywood;
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Norse-Bold", sans-serif;
+}
